@@ -1,47 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
 body {
     background: url("https://i.pinimg.com/originals/7d/b4/f6/7db4f675de8ebfcee294b2fc7d1e6452.gif");
     background-size: cover;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
     font-size: 15px;
     letter-spacing: 2px;
 }
 
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161616ce;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 700px;
+    width: 450px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    transition: 0.2s;
+}
 
 .profile-picture img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
-    height: auto;
+    height: 125px;
     max-width: 150px;
     border-radius:50%;
     border: 3px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.50);
-  }
+    transition: 0.2s;
+}
+
+.profile-picture img:hover {
+    height: 150px;
+    transition:  0.3s;
+}
 
 .profile-name {
-      text-align: center;
-      padding: 30px;
-  }
+    text-align: center;
+    padding: 30px 0px 15px 0px;
+    font-weight: 500;
+}
+
 
 .links {
-      text-align: center;
-      margin-top: 20px;
-      padding: 20px;
-      border: 1px solid white;
-      border-width: 2px;
-      width: 290px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 10px;
-      backdrop-filter: blur(20px);
-      background-color: rgba(1, 0, 70, 0.199);
-      box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.301);
-      text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-width: 2px;
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    text-transform: uppercase;
+    background-color: rgba(31, 31, 31, 0.199);
+    box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.301);
+    transition: 0.3s;
+    letter-spacing: 2.5px;
+}
 
-  }
 
 a {
     text-decoration: none;
@@ -52,6 +77,21 @@ a {
 a:hover {
     color: #000;
     background: #fff;
-    transition: ease-in-out 0.3s;
     letter-spacing: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-position-x: -350px;
+    }
+
+    .box {
+        width: 400px;
+    }
+
+    .links {
+        width: 250px;
+    }
 }
